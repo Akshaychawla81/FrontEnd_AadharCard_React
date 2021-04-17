@@ -5,7 +5,7 @@ import {withRouter, BrowserRouter, Route } from 'react-router-dom';
 import React, {Component}  from 'react'
 import AddUser from './Components/AddUser'
 import { Button ,Nav} from 'react-bootstrap';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class App extends Component {
