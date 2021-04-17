@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, {Component}  from 'react'
 import moment from "moment"
 import Zoom from 'react-img-zoom'
+import {Table} from 'react-bootstrap'
+
 class UserDetails extends Component
 {
 
@@ -39,7 +41,7 @@ componentDidMount(){
           
             <div  className='userlist'>
 
-                  <table className="table">
+                  <Table striped bordered hover variant="dark">
       <thead>
         <tr>
           
@@ -66,13 +68,13 @@ componentDidMount(){
           <td>{user.address}</td>
           <td>{user.aadharNumber}</td>
           {/* Display Image from Data Base  */}
-       <td> <Zoom  img={`data:image/jpeg;base64,${user.frontImage}`}   zoomScale={2} 
-  width={200 }
-  height={250}
+       <td> <Zoom  img={`data:image/jpeg;base64,${user.frontImage}`}   zoomScale={4} 
+  width={300 }
+  height={150}
        ></Zoom>
        </td>
       {/* Display Image from Data Base  */}
-       <td> <Zoom  img={`data:image/jpeg;base64,${user.backImage}`}   zoomScale={3}
+       <td> <Zoom  img={`data:image/jpeg;base64,${user.backImage}`}   zoomScale={5}
   width={300 }
   height={150}
        ></Zoom>
@@ -84,7 +86,7 @@ componentDidMount(){
        } 
       
       </tbody>
-    </table>
+    </Table>
 
           </div>
           );

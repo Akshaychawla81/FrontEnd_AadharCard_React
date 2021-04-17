@@ -118,7 +118,8 @@ render(){
     <TextField
           id="outlined-multiline-static"
           label="Addhar Number"
-      
+          required
+          inputProps={{ pattern: "/^[-+]?\d+$/;" }}
           fullWidth
           rows={4}
           margin='dense'
@@ -142,7 +143,7 @@ render(){
 
           <TextField
     id="outlined-multiline-static"
-    label="Target Date"
+    label="Date"
     type="date"
     fullWidth
     margin='dense'
