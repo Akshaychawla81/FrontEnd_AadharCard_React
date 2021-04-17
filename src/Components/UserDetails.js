@@ -47,9 +47,9 @@ componentDidMount(){
           
         <th scope="col">ID</th>
         <th scope="col"> Full Name</th>
-          
-          <th scope="col">Aadhar Number</th>
           <th scope="col">Address</th>
+          <th scope="col">Aadhar Number</th>
+          
           
           
           <th scope="col">Front image </th>
